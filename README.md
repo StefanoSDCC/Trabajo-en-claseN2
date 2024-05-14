@@ -1,2 +1,11 @@
-# Trabajo-en-claseN2
-Uml de DOCTOR, PACIENTE, ETC
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
+
+// Enumeración para el estado de la cita médica
+enum EstadoCita {
+    PROGRAMADA,
+    REALIZADA,
+    CANCELADA
+}
