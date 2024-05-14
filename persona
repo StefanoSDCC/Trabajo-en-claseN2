@@ -1,11 +1,41 @@
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.List;
+// Clase Persona (Clase base)
+public class Persona {
+    private String nombre;
+    private String identificacion;
+    private String direccion;
 
-// Enumeración para el estado de la cita médica
-enum EstadoCita {
-    PROGRAMADA,
-    REALIZADA,
-    CANCELADA
+    public Persona(String nombre, String identificacion, String direccion) {
+        this.nombre = nombre;
+        this.identificacion = identificacion;
+        this.direccion = direccion;
+    }
+
+    // Getters y setters para los atributos
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getIdentificacion() {
+        return identificacion;
+    }
+
+    public void setIdentificacion(String identificacion) {
+        this.identificacion = identificacion;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    // Otros métodos relevantes
+    // ...
 }
+
